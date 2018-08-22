@@ -1,4 +1,5 @@
 declare module "vuelidate/lib/validators" {
+    import Vue from "vue";
     import {ValidationPredicate} from "vuelidate";
 
     /**
@@ -55,4 +56,12 @@ declare module "vuelidate/lib/validators" {
      * Passes when all of provided validators passes.
      */
     export function and(...validators: ValidationPredicate[]): () => boolean;
+
+    export const helpers: {
+        withParams: any;
+        req(value: any): boolean;
+        len(value: any[] | object | string);
+        ref(reference: string, vm: Vue, parentVm: Vue): any;
+        regex(type: any, expr: RegExp): boolean;
+    }
 }
