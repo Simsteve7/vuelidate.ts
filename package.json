@@ -1,18 +1,11 @@
 {
   "name": "@types/vuelidate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "dependencies": {
-    "vuelidate": "^0.6.2",
-    "vue": "^2.5.16"
-  },
+  "dependencies": {},
   "license": "MIT",
   "scripts": {
     "build": "tsc --listFiles --listEmittedFiles -p types && echo \"No outputs in external lib mode.\"",
     "lint": "dtslint types"
-  },
-  "devDependencies": {
-    "typescript": "^2.8.3",
-    "dtslint": "^0.3.0"
   }
 }
