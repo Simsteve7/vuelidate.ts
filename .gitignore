@@ -1,5 +1,5 @@
 build/
 node_modules/
-.DS_STORnE
+.idea/*
+.DS_STORE
 *.tgz
-.idea/
