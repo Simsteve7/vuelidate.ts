@@ -60,7 +60,7 @@ declare module "vuelidate/lib/validators" {
     export const helpers: {
         withParams: any;
         req(value: any): boolean;
-        len(value: any[] | object | string);
+        len(value: any[] | object | string): number;
         ref(reference: string, vm: Vue, parentVm: Vue): any;
         regex(type: any, expr: RegExp): boolean;
     }
