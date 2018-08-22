@@ -4,8 +4,5 @@
   "description": "",
   "dependencies": {},
   "license": "MIT",
-  "scripts": {
-    "build": "tsc --listFiles --listEmittedFiles -p types && echo \"No outputs in external lib mode.\"",
-    "lint": "dtslint types"
-  }
+  "scripts": {}
 }
