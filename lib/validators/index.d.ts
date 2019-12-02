@@ -18,6 +18,11 @@ declare module "vuelidate/lib/validators" {
     export function numeric(numeric: any): boolean;
 
     /**
+     * Accepts only decimals.
+     */
+    export function decimal(decimal: any): boolean;
+    
+    /**
      * Checks if a number is in specified bounds. Min and max are both inclusive.
      */
     export function between(min: number, max: number): (value: any) => boolean;
